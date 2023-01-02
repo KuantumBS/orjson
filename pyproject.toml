@@ -24,12 +24,12 @@ classifiers = [
 
 [build-system]
 build-backend = "maturin"
-requires = ["maturin>=0.13,<0.15"]
+requires = ["maturin>=0.13"]
 
 [tool.maturin]
 sdist-include = ["build.rs", "Cargo.lock", "include/**/*"]
 
 [tool.black]
 line-length = 88
-target-version = ["py37"]
+target-version = ['py37', 'py38', 'py39', 'py10', 'py11', 'py12']
 include = ".pyi?$"
